@@ -1,4 +1,4 @@
-import '../offer.css'
+import '../styles/offer.css'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import TimelapseIcon from '@mui/icons-material/Timelapse';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
