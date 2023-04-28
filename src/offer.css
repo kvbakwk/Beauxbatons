@@ -1,0 +1,137 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.offer>.element {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .12);
+    border-radius: 10px;
+}
+
+
+.offer .info {
+    display: grid;
+    grid-template: 100px 300px / 1fr;
+
+    width: 100%;
+    height: 400px;
+}
+
+.offer .info .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.offer .info .parameters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.offer .info .parameters .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 33%;
+}
+
+.offer .info .parameters .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: rgba(0, 0, 0, .08);
+    border-radius: 10px;
+}
+
+.offer .info .parameters .text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 200px;
+    height: 60px;
+
+    margin-left: 20px;
+}
+
+.offer .info .parameters .text .title {
+    color: rgba(0, 0, 0, .4);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.offer .info .parameters .text .desc {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.offer .tech {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 100%;
+    height: 370px;
+    padding: 50px 30px;
+}
+
+.offer .tech .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.offer .tech .expected {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.offer .tech .techs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.offer .tech .techs .element {
+    padding: 4px 10px;
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .08);
+}

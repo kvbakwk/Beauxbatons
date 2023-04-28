@@ -1,0 +1,120 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+}
+
+.header .logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #7b1fa2;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, .12);
+}
+
+.header .quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+    font-size: 2rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.main {
+    position: relative;
+
+    display: grid;
+    grid-template: 1fr / 7fr 3fr;
+    gap: 20px;
+
+    width: 1000px;
+    margin: 50px auto 100px auto;
+}
+
+.main .application {
+    position: sticky;
+    top: 100px;
+
+    display: grid;
+    grid-template: 105px 45px / 1fr;
+
+    width: 100%;
+    height: 150px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .12);
+}
+
+.main .application .app-button {
+    grid-area: span 1 / span 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .application .app-button button {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    width: 250px;
+    height: 50px;
+
+    border-radius: 10px;
+    background-color: #7b1fa2;
+}
+
+.main .application .app-button button:hover {
+    background-color: #9226c0;
+}
+
+.main .application .options {
+    grid-area: span 1 / span 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .application .options div {
+    width: 100%;
+    height: 100%;
+}
+
+.main .application .options div button {
+    color: #252525;
+
+    width: 50%;
+}
+
+.main .application .options div button:first-child {
+    border-color: #25252544;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 10px;
+}
+
+.main .application .options div button:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.main .application .options div button:hover {
+    background-color: #25252511;
+}
