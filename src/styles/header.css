@@ -16,10 +16,14 @@
     justify-content: flex-start;
     align-items: center;
 
-    color: #7b1fa2;
+    color: #481fa2;
     font-size: 3rem;
     font-weight: 600;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, .12);
+}
+
+.header main .logo span#logo {
+    color: #4090eb;
 }
 
 .header main .quote {
@@ -35,9 +39,11 @@
 }
 
 .header .colorBar {
-    width: 100%;
+    width: 1000px;
     height: 10px;
+    margin: 0 auto;
 
-    background: linear-gradient(90deg, blueviolet 30%, #00ffff, #00df00 70%);
+    border-radius: 10px;
+    background: linear-gradient(135deg, #481fa2 30%, #4090eb 70%);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .40);
 }

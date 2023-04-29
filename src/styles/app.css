@@ -41,11 +41,11 @@
     height: 50px;
 
     border-radius: 10px;
-    background-color: #7b1fa2;
+    background-color: #481fa2;
 }
 
 .main .application .app-button button:hover {
-    background-color: #9226c0;
+    background-color: #6c35e4;
 }
 
 .main .application .options {
