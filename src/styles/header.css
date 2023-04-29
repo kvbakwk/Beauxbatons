@@ -12,6 +12,8 @@
     top: 20px;
     left: 40px;
 
+    width: 400px;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -22,8 +24,23 @@
     text-shadow: 3px 3px 2px rgba(0, 0, 0, .12);
 }
 
-.header main .logo span#logo {
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.header main .logo .container {
+    display: grid;
+}
+
+.header main .logo .container #dynamic-txt {
     color: #4090eb;
+    overflow: hidden;
+    border-right: 0.15rem solid #000;
+    white-space: nowrap;
+    width: 4.8ch;
+    animation: blink .5s step-end alternate infinite;
 }
 
 .header main .quote {

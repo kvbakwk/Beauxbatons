@@ -120,6 +120,15 @@ const Offer = () => {
                     <div className="element">
                         CSS
                     </div>
+                    <div className="element">
+                        AWS
+                    </div>
+                    <div className="element">
+                        PostgreSQL
+                    </div>
+                    <div className="element">
+                        GNU/Linux
+                    </div>
                 </div>
                 <div className="expected">
                     Mile widziane
