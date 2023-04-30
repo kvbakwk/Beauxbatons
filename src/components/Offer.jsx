@@ -109,6 +109,9 @@ const Offer = () => {
                         TypeScript
                     </div>
                     <div className="element">
+                        SQL
+                    </div>
+                    <div className="element">
                         Node.js
                     </div>
                     <div className="element">
@@ -121,13 +124,7 @@ const Offer = () => {
                         CSS
                     </div>
                     <div className="element">
-                        AWS
-                    </div>
-                    <div className="element">
-                        PostgreSQL
-                    </div>
-                    <div className="element">
-                        GNU/Linux
+                        Linux
                     </div>
                 </div>
                 <div className="expected">
@@ -142,6 +139,12 @@ const Offer = () => {
                     </div>
                     <div className="element">
                         Electron
+                    </div>
+                    <div className="element">
+                        PostgreSQL
+                    </div>
+                    <div className="element">
+                        AWS
                     </div>
                 </div>
             </div>
