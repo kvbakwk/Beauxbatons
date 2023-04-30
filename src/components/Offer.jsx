@@ -8,6 +8,8 @@ import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
 import CodeIcon from '@mui/icons-material/Code';
 
 import OfferParameter from './OfferParameter';
+import OfferRequirements from './OfferRequirements.jsx';
+import OfferOptional from './OfferOptional.jsx';
 
 const Offer = () => {
     return (
@@ -73,6 +75,47 @@ const Offer = () => {
                         Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz naszych potrzeb. Na naszej stronie możesz zobaczyć zrealizowane
                         przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
                 </div>
+            </div>
+            <div className="requirementsOptional">
+                <main className="required">
+                    <div className="required title">Nasze wymagania</div>
+                        <OfferRequirements 
+                            requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o JavaScript, React.js'
+                        />
+                        <OfferRequirements
+                            requirement='podstawowa znajomość TypeScript'
+                        />
+                        <OfferRequirements
+                            requirement='zaawansowana umięjętność korzystania z CSS'
+                        />
+                        <OfferRequirements
+                            requirement='podstawowa umięjętność obsługi systemów GNU/Linux z poziomu terminalu'
+                        />
+                        <OfferRequirements
+                            requirement='podstawowa umięjętność posługiwania się SQL'
+                        />
+                </main>
+                <main className="optional">
+                    <div className="optional title">Mile widziane</div>
+                        <OfferOptional 
+                            optional='znajomość Java'
+                        />
+                        <OfferOptional 
+                            optional='znajomość Python'
+                        />
+                        <OfferOptional 
+                            optional='znajomość Bootstrap'
+                        />
+                        <OfferOptional 
+                            optional='znajomość Electron'
+                        />
+                        <OfferOptional 
+                            optional='znajomość PostgreSQL'
+                        />
+                        <OfferOptional 
+                            optional='znajomość AWS'
+                        />
+                </main>
             </div>
         </div>
     );

@@ -180,3 +180,79 @@
 
     margin: 0 20px;
 }
+
+
+
+
+
+.offer .requirementsOptional {
+    height: auto;
+
+    background: #fff;
+
+    box-shadow: rgba(0, 0, 0, .12);
+    border-radius: 10px;
+}
+
+.offer .requirementsOptional main.required {
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    padding: 0 0 30px 0;
+}
+
+.offer .requirementsOptional main.required .title {
+    padding: 50px 0 10px 30px;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.offer .requirementsOptional main.required .requirementsList {
+    display: grid;
+    grid-template: 
+                    "icon text" 38px;
+
+    justify-content: left;
+    gap: 0 20px;
+    margin: 0 0 0 30px;
+
+    padding: 10px;
+}
+
+.offer .requirementsOptional main.required .requirementsList .icon {
+    position: relative;
+        top: -7px;
+
+    color: #481fa2;
+    font-size: 2rem;
+}
+
+.offer .requirementsOptional main.optional {
+    padding: 0 0 30px 0;   
+}
+
+.offer .requirementsOptional main.optional .title {
+    padding: 50px 0 10px 30px;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.offer .requirementsOptional main.optional .optionalList {
+    display: grid;
+    grid-template: 
+                    "icon text" 10px;
+
+    justify-content: left;
+    gap: 0 20px;
+    margin: 0 0 0 30px;
+
+    padding: 10px;
+}
+
+.offer .requirementsOptional main.optional .optionalList .icon {
+    position: relative;
+        top: -7px;
+
+    color: #481fa2;
+    font-size: 2rem;
+}
