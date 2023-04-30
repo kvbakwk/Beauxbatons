@@ -1,14 +1,22 @@
+import '../styles/header.css';
+
 const Header = () => {
-    return ( 
+    return (
         <div className="header">
-            <div className="logo">
-                GoodieCodes
-            </div>
-            <div className="quote">
-                Witaj, interesuje Cię nasza firma? Pracuj dla nas!
-            </div>
+            <main>
+                <div className="logo">
+                    Goodie
+                    <div className="container">
+                        <span id='dynamic-txt'>Codes</span>
+                    </div>
+                </div>
+                <div className="quote">
+                    Witaj, interesuje Cię nasza firma? Pracuj dla nas!
+                </div>
+            </main>
+            <div className="colorBar"></div>
         </div>
     );
 }
- 
+
 export default Header;

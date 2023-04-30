@@ -1,5 +1,6 @@
 import { Button, ButtonGroup } from "@mui/material";
 import Offer from "./Offer";
+import '../styles/app.css';
 
 const Main = () => {
     return ( 

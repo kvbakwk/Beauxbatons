@@ -4,6 +4,7 @@ import TimelapseIcon from '@mui/icons-material/Timelapse';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 import ArticleIcon from '@mui/icons-material/Article';
+import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
 
 const Offer = () => {
     return (
@@ -78,6 +79,19 @@ const Offer = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="element">
+                        <div className="icon">
+                            <TapAndPlayIcon />
+                        </div>
+                        <div className="text">
+                            <div className="title">
+                                Typ rekrutacji
+                            </div>
+                            <div className="desc">
+                                Zdalna
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="tech element">
@@ -95,6 +109,9 @@ const Offer = () => {
                         TypeScript
                     </div>
                     <div className="element">
+                        SQL
+                    </div>
+                    <div className="element">
                         Node.js
                     </div>
                     <div className="element">
@@ -105,6 +122,9 @@ const Offer = () => {
                     </div>
                     <div className="element">
                         CSS
+                    </div>
+                    <div className="element">
+                        Linux
                     </div>
                 </div>
                 <div className="expected">
@@ -119,6 +139,12 @@ const Offer = () => {
                     </div>
                     <div className="element">
                         Electron
+                    </div>
+                    <div className="element">
+                        PostgreSQL
+                    </div>
+                    <div className="element">
+                        AWS
                     </div>
                 </div>
             </div>
