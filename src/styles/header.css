@@ -37,7 +37,7 @@
 .header main .logo .container #dynamic-txt {
     color: #4090eb;
     overflow: hidden;
-    border-right: 0.15rem solid #000;
+    border-right: 0.2rem solid #481fa2;
     white-space: nowrap;
     width: 4.8ch;
     animation: blink .5s step-end alternate infinite;

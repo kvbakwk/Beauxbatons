@@ -13,7 +13,11 @@
     border-radius: 10px;
 }
 
-.offer .info {
+
+
+
+
+.offer .general {
     display: grid;
     grid-template: 100px 300px / 1fr;
 
@@ -21,7 +25,7 @@
     height: 400px;
 }
 
-.offer .info .header {
+.offer .general .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -36,7 +40,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, .12);
 }
 
-.offer .info .parameters {
+.offer .general .parameters {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -48,7 +52,7 @@
     padding: 10px;
 }
 
-.offer .info .parameters .element {
+.offer .general .parameters .element {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +61,7 @@
     height: 33%;
 }
 
-.offer .info .parameters .icon {
+.offer .general .parameters .icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +73,7 @@
     border-radius: 10px;
 }
 
-.offer .info .parameters .text {
+.offer .general .parameters .text {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -82,17 +86,21 @@
     margin-left: 20px;
 }
 
-.offer .info .parameters .text .title {
+.offer .general .parameters .text .title {
     color: rgba(0, 0, 0, .4);
     font-size: .8rem;
     font-weight: 600;
 }
 
-.offer .info .parameters .text .desc {
+.offer .general .parameters .text .desc {
     color: #000;
     font-size: 1rem;
     font-weight: 400;
 }
+
+
+
+
 
 .offer .tech {
     display: flex;
@@ -134,4 +142,41 @@
 
     border-radius: 10px;
     background-color: rgba(0, 0, 0, .08);
+}
+
+
+
+
+
+.offer .info {
+    display: grid;
+    grid-template: 1fr / 40% 60%;
+
+    width: 100%;
+    height: 200px;
+}
+
+.offer .info .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.offer .info .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    text-align: center;
+
+    margin: 0 20px;
 }
