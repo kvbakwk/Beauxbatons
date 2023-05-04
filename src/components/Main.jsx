@@ -1,8 +1,12 @@
 import { Button, ButtonGroup } from "@mui/material";
+
 import Offer from "./Offer";
+import SharePopover from "./SharePopover.jsx";
+
 import '../styles/main.css'
 
 const Main = () => {
+
     return (
         <div className="main">
             <Offer />
@@ -13,12 +17,13 @@ const Main = () => {
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>Drukuj</Button>
-                        <Button>Udostępnij</Button>
+                        <SharePopover />
                     </ButtonGroup>
                 </div>
             </div>
         </div>
     );
-}
+};
+
 
 export default Main;
