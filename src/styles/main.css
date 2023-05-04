@@ -19,10 +19,10 @@
     width: 100%;
     height: 150px;
 
-    background: #222;
+    background: var(--backgroundColor);
     border-radius: 10px;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 5px var(--boxShadow);
 }
 
 .main .application .app-button {
@@ -34,7 +34,7 @@
 }
 
 .main .application .app-button button {
-    color: #fff;
+    color: var(--backgroundColor);
     font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
@@ -45,7 +45,7 @@
     height: 50px;
 
     border-radius: 10px;
-    background-color: #913fe2;
+    background-color: var(--primaryColorLight);
 }
 
 .main .application .app-button button:hover {
@@ -66,7 +66,7 @@
 }
 
 .main .application .options div button {
-    color: #fff;
+    color: var(--color);
     font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
@@ -75,7 +75,7 @@
 }
 
 .main .application .options div button:first-child {
-    border-color: #312f40;
+    border-color: var(--backgroundColorLight);
     border-top-left-radius: 0;
     border-bottom-left-radius: 10px;
 }
@@ -86,5 +86,5 @@
 }
 
 .main .application .options div button:hover {
-    background-color: #303030;
+    background-color: var(--backgroundColorLight);
 }

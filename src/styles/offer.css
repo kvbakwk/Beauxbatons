@@ -8,8 +8,8 @@
 }
 
 .offer>.element {
-    background-color: #222;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    background-color: var(--backgroundColor);
+    box-shadow: 0 0 10px var(--boxShadow);
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@
     height: 100%;
     padding-left: 30px;
 
-    border-bottom: 1px solid #312f40;
+    border-bottom: 1px solid var(--backgroundColorLight);
 }
 
 .offer .general .parameters {
@@ -69,9 +69,8 @@
     width: 60px;
     height: 60px;
 
-    background-color: rgba(0, 0, 0, .08);
+    background-color: var(--backgroundColorLight);
     border-radius: 10px;
-    border: 1px solid #312f40;
 }
 
 .offer .general .parameters .text {
@@ -84,23 +83,21 @@
     width: 200px;
     height: 60px;
 
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .offer .general .parameters .text .title {
     padding: 4px 8px 4px 8px;
 
     border-radius: 14px;
-    border: 1px solid #312f40;
-    background: #0b0a0d;
 
-    color: #fff;
+    color: var(--titleColor);
     font-size: .8rem;
     font-weight: 600;
 }
 
 .offer .general .parameters .text .desc {
-    color: #fff;
+    color: var(--color);
     font-size: 1rem;
     font-weight: 400;
 
@@ -150,8 +147,7 @@
     padding: 4px 10px 4px 10px;
 
     border-radius: 14px;
-    border: 1px solid #312f40;
-    background: #0b0a0d;
+    background: var(--backgroundColorLight);
 }
 
 
@@ -172,11 +168,11 @@
     justify-content: center;
     align-items: center;
 
-    color: #fff;
+    color: var(--backgroundColor);
     font-size: 2.5rem;
     font-weight: 600;
 
-    background-color: #000;
+    background-color: var(--color);
     border-radius: 10px;
 }
 

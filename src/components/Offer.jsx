@@ -19,27 +19,27 @@ const Offer = () => {
                 <div className="header"> Fullstack Developer (JavaScript) </div>
                 <div className="parameters">
                     <OfferParameter
-                        icon={<LocationOnIcon sx={{ color: '#913fe2' }} />}
+                        icon={<LocationOnIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Lokalizacja firmy'
                         desc='ul. Karpia 56/58, Łódź' />
                     <OfferParameter
-                        icon={<TimelapseIcon sx={{ color: '#913fe2' }} />}
+                        icon={<TimelapseIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Wymiar pracy'
                         desc='Pełny etat' />
                     <OfferParameter
-                        icon={<MapsHomeWorkIcon sx={{ color: '#913fe2' }} />}
+                        icon={<MapsHomeWorkIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Typ pracy'
                         desc='Zdalna' />
                     <OfferParameter
-                        icon={<MyLocationIcon sx={{ color: '#913fe2' }} />}
+                        icon={<MyLocationIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Miejsce pracy'
                         desc='Polska' />
                     <OfferParameter
-                        icon={<ArticleIcon sx={{ color: '#913fe2' }} />}
+                        icon={<ArticleIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Typ umowy'
                         desc='O pracę' />
                     <OfferParameter
-                        icon={<TapAndPlayIcon sx={{ color: '#913fe2' }} />}
+                        icon={<TapAndPlayIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Typ rekrutacji'
                         desc='Zdalna' />
                 </div>
