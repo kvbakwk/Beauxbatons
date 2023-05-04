@@ -19,27 +19,27 @@ const Offer = () => {
                 <div className="header"> Fullstack Developer (JavaScript) </div>
                 <div className="parameters">
                     <OfferParameter
-                        icon={<LocationOnIcon />}
+                        icon={<LocationOnIcon sx={{ color: '#913fe2' }} />}
                         title='Lokalizacja firmy'
                         desc='ul. Karpia 56/58, Łódź' />
                     <OfferParameter
-                        icon={<TimelapseIcon />}
+                        icon={<TimelapseIcon sx={{ color: '#913fe2' }} />}
                         title='Wymiar pracy'
                         desc='Pełny etat' />
                     <OfferParameter
-                        icon={<MapsHomeWorkIcon />}
+                        icon={<MapsHomeWorkIcon sx={{ color: '#913fe2' }} />}
                         title='Typ pracy'
                         desc='Zdalna' />
                     <OfferParameter
-                        icon={<MyLocationIcon />}
+                        icon={<MyLocationIcon sx={{ color: '#913fe2' }} />}
                         title='Miejsce pracy'
                         desc='Polska' />
                     <OfferParameter
-                        icon={<ArticleIcon />}
+                        icon={<ArticleIcon sx={{ color: '#913fe2' }} />}
                         title='Typ umowy'
                         desc='O pracę' />
                     <OfferParameter
-                        icon={<TapAndPlayIcon />}
+                        icon={<TapAndPlayIcon sx={{ color: '#913fe2' }} />}
                         title='Typ rekrutacji'
                         desc='Zdalna' />
                 </div>
@@ -81,23 +81,23 @@ const Offer = () => {
                 <div className="title">Nasze wymagania</div>
                 <div className="required">
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o React.js'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='znajomość języka TypeScript, pozwalająca sprawnie odczytywać program w nim napisany'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='zaawansowana umięjętność korzystania z CSS'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='podstawowa umięjętność obsługi systemów Linux z poziomu terminalu'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='podstawowa umięjętność posługiwania się SQL'
                     />
                 </div>

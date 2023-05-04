@@ -8,8 +8,8 @@
 }
 
 .offer>.element {
-    background-color: #fff;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .12);
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@
     height: 100%;
     padding-left: 30px;
 
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    border-bottom: 1px solid #312f40;
 }
 
 .offer .general .parameters {
@@ -71,6 +71,7 @@
 
     background-color: rgba(0, 0, 0, .08);
     border-radius: 10px;
+    border: 1px solid #312f40;
 }
 
 .offer .general .parameters .text {
@@ -87,15 +88,23 @@
 }
 
 .offer .general .parameters .text .title {
-    color: rgba(0, 0, 0, .4);
+    padding: 4px 8px 4px 8px;
+
+    border-radius: 14px;
+    border: 1px solid #312f40;
+    background: #0b0a0d;
+
+    color: #fff;
     font-size: .8rem;
     font-weight: 600;
 }
 
 .offer .general .parameters .text .desc {
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
+
+    padding: 0 10px 0 10px;
 }
 
 
@@ -138,10 +147,11 @@
 }
 
 .offer .tech .techs .element {
-    padding: 4px 10px;
+    padding: 4px 8px 4px 8px;
 
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, .08);
+    border-radius: 14px;
+    border: 1px solid #312f40;
+    background: #0b0a0d;
 }
 
 
