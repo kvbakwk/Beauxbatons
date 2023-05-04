@@ -8,9 +8,9 @@ function App() {
 
   useEffect(() => {
     if (dark)
-      document.querySelector('body').className = ""
-    else
       document.querySelector('body').className = "dark"
+    else
+      document.querySelector('body').className = ""
   }, [dark])
 
   return (
