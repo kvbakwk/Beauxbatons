@@ -1,8 +1,19 @@
-import { Button, ButtonGroup } from "@mui/material";
+import { useState } from "react";
+import { Button, ButtonGroup, Popover } from "@mui/material";
+
 import Offer from "./Offer";
+
 import '../styles/main.css'
 
 const Main = () => {
+
+    const [shareOpen, setShareOpen] = useState(false)
+
+    const handleClick = e => {
+        navigator.clipboard.writeText('(??? or kvba.pl/)')
+        setShareOpen(true)
+    }
+
     return (
         <div className="main">
             <Offer />
@@ -13,12 +24,23 @@ const Main = () => {
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>Drukuj</Button>
-                        <Button>Udostępnij</Button>
+                        <Button onClick={handleClick}> Udostępnij </Button>
                     </ButtonGroup>
                 </div>
             </div>
+            <Popover
+                open={shareOpen}
+                onClose={() => setShareOpen(false)}
+                anchorReference="anchorPosition"
+                anchorPosition={{ top: 20, left: 910 }}
+                anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+                transformOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+                <div style={{ padding: '15px 20px', backgroundColor: '#481fa2', color: '#fff' }}>Skopiowano link do schowka</div>
+            </Popover >
         </div>
     );
-}
+};
+
 
 export default Main;
