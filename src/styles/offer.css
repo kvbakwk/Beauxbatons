@@ -233,8 +233,8 @@
 .offer .requirementsOptional main.optional .title {
     padding: 50px 0 10px 30px;
 
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 600;
 }
 
 .offer .requirementsOptional main.optional .optionalList {
@@ -247,12 +247,14 @@
     margin: 0 0 0 30px;
 
     padding: 10px;
+
+    font-size: 1rem;
 }
 
 .offer .requirementsOptional main.optional .optionalList .icon {
     position: relative;
-        top: -7px;
+        top: -3px;
 
-    color: #481fa2;
-    font-size: 2rem;
+    color: #4090eb;
+    font-size: 0.9rem;
 }
