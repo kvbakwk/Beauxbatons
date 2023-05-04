@@ -69,11 +69,11 @@ const Offer = () => {
             <div className="info element">
                 <div className="banner">
                     <CodeIcon sx={{ fontSize: '5rem' }} />
-                    <span>O projekcie</span>
+                    <span>O firmie</span>
                 </div>
                 <div className="text">
                     <p>
-                        Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz naszych potrzeb. Na naszej stronie możesz zobaczyć zrealizowane
+                        Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz potrzeb naszych. Na naszej stronie możesz zobaczyć zrealizowane
                         przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
                 </div>
             </div>
