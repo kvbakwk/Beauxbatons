@@ -54,7 +54,7 @@ const Offer = () => {
                     <div className="element"> Node.js </div>
                     <div className="element"> React.js </div>
                     <div className="element"> CSS </div>
-                    <div className="element"> Linux </div>
+                    <div className="element"> GNU/Linux </div>
                 </div>
                 <div className="expected"> Mile widziane </div>
                 <div className="techs">
@@ -94,7 +94,7 @@ const Offer = () => {
                     />
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
-                        requirement='podstawowa umięjętność obsługi systemów Linux z poziomu terminalu'
+                        requirement='podstawowa umięjętność obsługi systemów GNU/Linux z poziomu terminalu'
                     />
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
