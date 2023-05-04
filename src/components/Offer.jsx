@@ -6,10 +6,11 @@ import MyLocationIcon from '@mui/icons-material/MyLocation';
 import ArticleIcon from '@mui/icons-material/Article';
 import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
 import CodeIcon from '@mui/icons-material/Code';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 import OfferParameter from './OfferParameter';
-import OfferRequirements from './OfferRequirements.jsx';
-import OfferOptional from './OfferOptional.jsx';
+import OfferRequirement from './OfferRequirement.jsx';
 
 const Offer = () => {
     return (
@@ -76,46 +77,45 @@ const Offer = () => {
                         przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
                 </div>
             </div>
-            <div className="requirementsOptional">
-                <main className="required">
-                    <div className="required title">Nasze wymagania</div>
-                        <OfferRequirements 
-                            requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o JavaScript, React.js'
-                        />
-                        <OfferRequirements
-                            requirement='podstawowa znajomość TypeScript'
-                        />
-                        <OfferRequirements
-                            requirement='zaawansowana umięjętność korzystania z CSS'
-                        />
-                        <OfferRequirements
-                            requirement='podstawowa umięjętność obsługi systemów GNU/Linux z poziomu terminalu'
-                        />
-                        <OfferRequirements
-                            requirement='podstawowa umięjętność posługiwania się SQL'
-                        />
-                </main>
-                <main className="optional">
-                    <div className="optional title">Mile widziane</div>
-                        <OfferOptional 
-                            optional='znajomość Java'
-                        />
-                        <OfferOptional 
-                            optional='znajomość Python'
-                        />
-                        <OfferOptional 
-                            optional='znajomość Bootstrap'
-                        />
-                        <OfferOptional 
-                            optional='znajomość Electron'
-                        />
-                        <OfferOptional 
-                            optional='znajomość PostgreSQL'
-                        />
-                        <OfferOptional 
-                            optional='znajomość AWS'
-                        />
-                </main>
+            <div className="requirements element">
+                <div className="title">Nasze wymagania</div>
+                <div className="required">
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o React.js'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='znajomość języka TypeScript, pozwalająca sprawnie odczytywać program w nim napisany'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='zaawansowana umięjętność korzystania z CSS'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='podstawowa umięjętność obsługi systemów Linux z poziomu terminalu'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='podstawowa umięjętność posługiwania się SQL'
+                    />
+                </div>
+                <div className="title">Wymagania mile widziane</div>
+                <div className="optional">
+                    <OfferRequirement
+                        icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
+                        requirement='znajomość języków programowania takich jak Java lub Python'
+                    />
+                    <OfferRequirement
+                        icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
+                        requirement='znajomość frameworków webowych Bootstrap i/lub Electron'
+                    />
+                    <OfferRequirement
+                        icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
+                        requirement='doświadczenie przy pracy z PostgreSQL i/lub AWS'
+                    />
+                </div>
             </div>
         </div>
     );

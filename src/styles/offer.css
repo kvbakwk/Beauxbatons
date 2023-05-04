@@ -185,76 +185,58 @@
 
 
 
-.offer .requirementsOptional {
-    height: auto;
+.offer .requirements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
 
-    background: #fff;
-
-    box-shadow: rgba(0, 0, 0, .12);
-    border-radius: 10px;
+    width: 100%;
+    height: 600px;
 }
 
-.offer .requirementsOptional main.required {
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
-    padding: 0 0 30px 0;
-}
-
-.offer .requirementsOptional main.required .title {
-    padding: 50px 0 10px 30px;
+.offer .requirements .title {
+    display: flex;
+    align-items: center;
 
     font-size: 1.5rem;
     font-weight: 700;
+
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
 }
 
-.offer .requirementsOptional main.required .requirementsList {
-    display: grid;
-    grid-template: 
-                    "icon text" 38px;
+.offer .requirements .required,
+.offer .requirements .optional {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
 
-    justify-content: left;
-    gap: 0 20px;
-    margin: 0 0 0 30px;
-
-    padding: 10px;
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, .12); */
 }
 
-.offer .requirementsOptional main.required .requirementsList .icon {
-    position: relative;
-        top: -7px;
-
-    color: #481fa2;
-    font-size: 2rem;
+.offer .requirements .optional {
+    margin-bottom: 50px;
 }
 
-.offer .requirementsOptional main.optional {
-    padding: 0 0 30px 0;   
+.offer .requirements .required .element,
+.offer .requirements .optional .element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
 }
 
-.offer .requirementsOptional main.optional .title {
-    padding: 50px 0 10px 30px;
-
-    font-size: 1.35rem;
-    font-weight: 600;
-}
-
-.offer .requirementsOptional main.optional .optionalList {
-    display: grid;
-    grid-template: 
-                    "icon text" 10px;
-
-    justify-content: left;
-    gap: 0 20px;
-    margin: 0 0 0 30px;
-
-    padding: 10px;
-
-    font-size: 1rem;
-}
-
-.offer .requirementsOptional main.optional .optionalList .icon {
-    position: relative;
-        top: -3px;
-
-    color: #4090eb;
-    font-size: 0.9rem;
+.offer .requirements .required .element svg,
+.offer .requirements .optional .element svg {
+    font-size: 1.8rem;
 }
