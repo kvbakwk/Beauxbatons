@@ -6,8 +6,11 @@ import MyLocationIcon from '@mui/icons-material/MyLocation';
 import ArticleIcon from '@mui/icons-material/Article';
 import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
 import CodeIcon from '@mui/icons-material/Code';
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 import OfferParameter from './OfferParameter';
+import OfferRequirement from './OfferRequirement.jsx';
 
 const Offer = () => {
     return (
@@ -72,6 +75,46 @@ const Offer = () => {
                     <p>
                         Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz naszych potrzeb. Na naszej stronie możesz zobaczyć zrealizowane
                         przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
+                </div>
+            </div>
+            <div className="requirements element">
+                <div className="title">Nasze wymagania</div>
+                <div className="required">
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o React.js'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='znajomość języka TypeScript, pozwalająca sprawnie odczytywać program w nim napisany'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='zaawansowana umięjętność korzystania z CSS'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='podstawowa umięjętność obsługi systemów Linux z poziomu terminalu'
+                    />
+                    <OfferRequirement
+                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        requirement='podstawowa umięjętność posługiwania się SQL'
+                    />
+                </div>
+                <div className="title">Wymagania mile widziane</div>
+                <div className="optional">
+                    <OfferRequirement
+                        icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
+                        requirement='znajomość języków programowania takich jak Java lub Python'
+                    />
+                    <OfferRequirement
+                        icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
+                        requirement='znajomość frameworków webowych Bootstrap i/lub Electron'
+                    />
+                    <OfferRequirement
+                        icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
+                        requirement='doświadczenie przy pracy z PostgreSQL i/lub AWS'
+                    />
                 </div>
             </div>
         </div>
