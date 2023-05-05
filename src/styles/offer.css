@@ -246,3 +246,43 @@
 .offer .requirements .optional .element svg {
     font-size: 1.8rem;
 }
+
+
+
+
+
+.offer .duties {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: auto;
+    padding: 50px 30px;
+}
+
+.offer .duties .title {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.offer .duties .dutie {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    padding: 10px 20px;
+}
+
+.offer .duties .dutie svg {
+    font-size: 1.8rem;
+}
