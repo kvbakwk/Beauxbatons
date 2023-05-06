@@ -64,8 +64,10 @@ const Offer = () => {
                     <span>O firmie</span>
                 </div>
                 <div className="text">
-                <p>Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz potrzeb naszych. Na naszej stronie możesz zobaczyć zrealizowane
-                        przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
+                    <p>
+                        Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz potrzeb naszych. Na naszej stronie możesz zobaczyć zrealizowane
+                        przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.
+                    </p>
                 </div>
             </div>
             <div className="requirements element">
@@ -73,38 +75,38 @@ const Offer = () => {
                 <div className="required">
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
-                        requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o React.js'
+                        requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o React.js.'
                     />
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
-                        requirement='znajomość języka TypeScript, pozwalająca sprawnie odczytywać program w nim napisany'
+                        requirement='Znajomość języka TypeScript, pozwalająca sprawnie odczytywać program w nim napisany.'
                     />
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
-                        requirement='zaawansowana umięjętność korzystania z CSS'
+                        requirement='Zaawansowana umięjętność korzystania z CSS.'
                     />
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
-                        requirement='podstawowa umięjętność obsługi systemów GNU/Linux z poziomu terminalu'
+                        requirement='Podstawowa umięjętność obsługi systemów GNU/Linux z poziomu terminalu.'
                     />
                     <OfferRequirement
                         icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
-                        requirement='podstawowa umięjętność posługiwania się SQL'
+                        requirement='Podstawowa umięjętność posługiwania się SQL.'
                     />
                 </div>
                 <div className="title">Wymagania mile widziane</div>
                 <div className="optional">
                     <OfferRequirement
                         icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
-                        requirement='znajomość języków programowania takich jak Java lub Python'
+                        requirement='Znajomość języków programowania takich jak Java lub Python.'
                     />
                     <OfferRequirement
                         icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
-                        requirement='znajomość frameworków webowych Bootstrap i/lub Electron'
+                        requirement='Znajomość frameworków webowych Bootstrap i/lub Electron.'
                     />
                     <OfferRequirement
                         icon={<CheckCircleOutlineIcon sx={{ color: '#4090eb' }} />}
-                        requirement='doświadczenie przy pracy z PostgreSQL i/lub AWS'
+                        requirement='Doświadczenie przy pracy z PostgreSQL i/lub AWS.'
                     />
                 </div>
             </div>
@@ -123,6 +125,20 @@ const Offer = () => {
                         <SchoolIcon sx={{ color: '#913fe2' }} />
                         dofinansowanie do kursów i szkoleń
                     </div>
+            </div>
+            <div className="duties element">
+                <div className="title">Twój zakres obowiązków</div>
+                <div className="dutie">
+                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
+                    Praca przy tworzeniu oprogramowania, z grupą programistów, w systemie Scrum.
+                </div>
+                <div className="dutie">
+                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
+                    Utrzymywanie i rozwój istniejącego kodu oraz wdrażanie zupełnie nowych rozwiązań.
+                </div>
+                <div className="dutie">
+                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
+                    Tworzenie dokumentacji do nowo utworzonego kodu, praca z kodem stworzonym już wcześniej.
                 </div>
             </div>
         </div>

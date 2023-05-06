@@ -19,10 +19,10 @@
     width: 100%;
     height: 150px;
 
-    background: var(--backgroundColor);
+    background: var(--background);
     border-radius: 10px;
 
-    box-shadow: 1px 1px 5px var(--boxShadow);
+    box-shadow: 1px 1px 5px var(--shadow);
 }
 
 .main .application .app-button {
@@ -34,10 +34,8 @@
 }
 
 .main .application .app-button button {
-    color: #fff;
-    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    color: var(--background);
+    font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
 
@@ -45,11 +43,11 @@
     height: 50px;
 
     border-radius: 10px;
-    background-color: var(--primaryColorLight);
+    background-color: var(--primary);
 }
 
 .main .application .app-button button:hover {
-    background-color: #6c35e4;
+    background-color: var(--primaryHover);
 }
 
 .main .application .options {
@@ -66,25 +64,24 @@
 }
 
 .main .application .options div button {
-    color: var(--color);
-    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    color: var(--text);
+    font-family: 'Work Sans', sans-serif;
 
     width: 50%;
 }
 
 .main .application .options div button:first-child {
-    border-color: var(--backgroundColorLight);
+    border-color: var(--shadow);
     border-top-left-radius: 0;
     border-bottom-left-radius: 10px;
 }
 
 .main .application .options div button:last-child {
+    border-color: var(--shadow);
     border-top-right-radius: 0;
     border-bottom-right-radius: 10px;
 }
 
 .main .application .options div button:hover {
-    background-color: var(--backgroundColorLight);
+    background-color: var(--backgroundLight);
 }

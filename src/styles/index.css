@@ -8,44 +8,34 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  color: #000;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  font-family: 'Work Sans', sans-serif;
 
+  background: var(--backgroundLight);
 
-  --primaryColor: #231231;
-  --primaryColorLight: #913fe2;
-  --secondaryColor: #4090eb;
-  --color: #000;
-  --backgroundColor: #fff;
-  --backgroundColorLight: rgba(0, 0, 0, 0.06);
-  --boxShadow: rgba(0, 0, 0, 0.12);
-  --iconColor: #000;
-  --titleColor: rgba(0, 0, 0, .4);
-  background: var(--backgroundColorLight);
+  --primary: #913fe2;
+  --primaryHover: #913fe2dd;
+  --secondary: #4090eb;
+  --text: #141414;
+  --background: #ebebeb;
+  --backgroundLight: #e0e0e0;
+  --shadow: rgba(0, 0, 0, 0.12);
+  --icon: #141414;
+  --title: rgba(0, 0, 0, .4);
 }
 
 body.dark {
-  color: #fff;
-  --primaryColor: #231231;
-  --primaryColorLight: #913fe2;
-  --secondaryColor: #4090eb;
-  --color: #fff;
-  --backgroundColor: #000;
-  --backgroundColorLight: #111111;
-  --boxShadow: rgba(0, 0, 0, 0.6);
-  --iconColor: #913fe2;
-  --titleColor: #888;
-  background: var(--backgroundColorLight);
-}
+  color: var(--text);
+  background: var(--backgroundLight);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  --primary: #913fe2;
+  --secondary: #4090eb;
+  --text: #ebebeb;
+  --background: #141414;
+  --backgroundLight: #202020;
+  --shadow: rgba(0, 0, 0, 0.6);
+  --icon: #ebebeb;
+  --title: #888;
 }
 
 .switch {
@@ -56,7 +46,7 @@ code {
   width: 25px;
   height: 25px;
 
-  background-color: var(--color);
+  background-color: var(--text);
   border-radius: 50%;
 
   cursor: pointer;

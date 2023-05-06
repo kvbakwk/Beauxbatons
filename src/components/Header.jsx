@@ -7,7 +7,7 @@ const Header = () => {
                 <div className="logo">
                     Goodie
                     <div className="container">
-                        <span id='dynamic-txt'>Codes</span>
+                        <span id='dynamic-txt'>Codes|</span>
                     </div>
                 </div>
                 <div className="quote">

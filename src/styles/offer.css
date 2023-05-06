@@ -8,8 +8,8 @@
 }
 
 .offer>.element {
-    background-color: var(--backgroundColor);
-    box-shadow: 0 0 10px var(--boxShadow);
+    background-color: var(--background);
+    box-shadow: 0 0 10px var(--shadow);
     border-radius: 10px;
 }
 
@@ -38,6 +38,7 @@
     padding-left: 30px;
 
     border-bottom: 1px solid var(--backgroundColorLight);
+    border-bottom: 1px solid var(--shadow);
 }
 
 .offer .general .parameters {
@@ -70,6 +71,7 @@
     height: 60px;
 
     background-color: var(--backgroundColorLight);
+    background-color: var(--backgroundLight);
     border-radius: 10px;
 }
 
@@ -91,13 +93,12 @@
 
     border-radius: 14px;
 
-    color: var(--titleColor);
+    color: var(--title);
     font-size: .8rem;
     font-weight: 600;
 }
 
 .offer .general .parameters .text .desc {
-    color: var(--color);
     font-size: 1rem;
     font-weight: 400;
 
@@ -147,7 +148,7 @@
     padding: 4px 10px 4px 10px;
 
     border-radius: 14px;
-    background: var(--backgroundColorLight);
+    background: var(--backgroundLight);
 }
 
 
@@ -168,11 +169,11 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--backgroundColor);
+    color: var(--background);
     font-size: 2.5rem;
     font-weight: 600;
 
-    background-color: var(--color);
+    background-color: var(--text);
     border-radius: 10px;
 }
 
@@ -225,7 +226,6 @@
     width: 100%;
     height: auto;
     padding: 0 50px;
-    /* border-bottom: 1px solid rgba(0, 0, 0, .12); */
 }
 
 .offer .requirements .optional {
@@ -246,6 +246,8 @@
 .offer .requirements .optional .element svg {
     font-size: 1.8rem;
 }
+
+
 
 
 .offer .benefits {
@@ -294,4 +296,45 @@
 
 .offer .benefits .tiles .element svg {
     font-size: 3rem;
+}
+
+
+
+
+
+.offer .duties {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: auto;
+
+    padding: 50px 30px;
+}
+
+.offer .duties .title {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.offer .duties .duty {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    padding: 10px 20px;
+}
+
+.offer .duties .duty svg {
+    font-size: 1.8rem;
 }
