@@ -285,10 +285,11 @@
 .offer .benefits .tiles .element {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 20px;
 
-    padding: 55px 20px;
 
     background: var(--backgroundColorLight);
     border-radius: 14px;
