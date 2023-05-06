@@ -8,8 +8,8 @@
 }
 
 .offer>.element {
-    background-color: var(--backgroundColor);
-    box-shadow: 0 0 10px var(--boxShadow);
+    background-color: var(--background);
+    box-shadow: 0 0 10px var(--shadow);
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@
     height: 100%;
     padding-left: 30px;
 
-    border-bottom: 1px solid var(--backgroundColorLight);
+    border-bottom: 1px solid var(--shadow);
 }
 
 .offer .general .parameters {
@@ -69,7 +69,7 @@
     width: 60px;
     height: 60px;
 
-    background-color: var(--backgroundColorLight);
+    background-color: var(--backgroundLight);
     border-radius: 10px;
 }
 
@@ -91,13 +91,12 @@
 
     border-radius: 14px;
 
-    color: var(--titleColor);
+    color: var(--title);
     font-size: .8rem;
     font-weight: 600;
 }
 
 .offer .general .parameters .text .desc {
-    color: var(--color);
     font-size: 1rem;
     font-weight: 400;
 
@@ -147,7 +146,7 @@
     padding: 4px 10px 4px 10px;
 
     border-radius: 14px;
-    background: var(--backgroundColorLight);
+    background: var(--backgroundLight);
 }
 
 
@@ -168,11 +167,11 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--backgroundColor);
+    color: var(--background);
     font-size: 2.5rem;
     font-weight: 600;
 
-    background-color: var(--color);
+    background-color: var(--text);
     border-radius: 10px;
 }
 
@@ -225,7 +224,6 @@
     width: 100%;
     height: auto;
     padding: 0 50px;
-    /* border-bottom: 1px solid rgba(0, 0, 0, .12); */
 }
 
 .offer .requirements .optional {
