@@ -8,8 +8,8 @@
 }
 
 .offer>.element {
-    background-color: #fff;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .12);
+    background-color: var(--backgroundColor);
+    box-shadow: 0 0 10px var(--boxShadow);
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@
     height: 100%;
     padding-left: 30px;
 
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    border-bottom: 1px solid var(--backgroundColorLight);
 }
 
 .offer .general .parameters {
@@ -69,7 +69,7 @@
     width: 60px;
     height: 60px;
 
-    background-color: rgba(0, 0, 0, .08);
+    background-color: var(--backgroundColorLight);
     border-radius: 10px;
 }
 
@@ -83,19 +83,25 @@
     width: 200px;
     height: 60px;
 
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .offer .general .parameters .text .title {
-    color: rgba(0, 0, 0, .4);
+    padding: 4px 8px 4px 8px;
+
+    border-radius: 14px;
+
+    color: var(--titleColor);
     font-size: .8rem;
     font-weight: 600;
 }
 
 .offer .general .parameters .text .desc {
-    color: #000;
+    color: var(--color);
     font-size: 1rem;
     font-weight: 400;
+
+    padding: 0 10px 0 10px;
 }
 
 
@@ -138,10 +144,10 @@
 }
 
 .offer .tech .techs .element {
-    padding: 4px 10px;
+    padding: 4px 10px 4px 10px;
 
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, .08);
+    border-radius: 14px;
+    background: var(--backgroundColorLight);
 }
 
 
@@ -162,11 +168,11 @@
     justify-content: center;
     align-items: center;
 
-    color: #fff;
+    color: var(--backgroundColor);
     font-size: 2.5rem;
     font-weight: 600;
 
-    background-color: #000;
+    background-color: var(--color);
     border-radius: 10px;
 }
 

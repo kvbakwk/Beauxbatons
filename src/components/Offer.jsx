@@ -1,13 +1,5 @@
 import '../styles/offer.css'
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import TimelapseIcon from '@mui/icons-material/Timelapse';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
-import MyLocationIcon from '@mui/icons-material/MyLocation';
-import ArticleIcon from '@mui/icons-material/Article';
-import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
-import CodeIcon from '@mui/icons-material/Code';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import { LocationOnIcon, TimelapseIcon, MapsHomeWorkIcon, MyLocationIcon, ArticleIcon, TapAndPlayIcon, CodeIcon, ErrorOutlineIcon, CheckCircleOutlineIcon, HealingIcon, MoreTimeIcon, SchoolIcon, } from '../Icons.jsx'
 
 import OfferParameter from './OfferParameter';
 import OfferRequirement from './OfferRequirement.jsx';
@@ -19,27 +11,27 @@ const Offer = () => {
                 <div className="header"> Fullstack Developer (JavaScript) </div>
                 <div className="parameters">
                     <OfferParameter
-                        icon={<LocationOnIcon />}
+                        icon={<LocationOnIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Lokalizacja firmy'
                         desc='ul. Karpia 56/58, Łódź' />
                     <OfferParameter
-                        icon={<TimelapseIcon />}
+                        icon={<TimelapseIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Wymiar pracy'
                         desc='Pełny etat' />
                     <OfferParameter
-                        icon={<MapsHomeWorkIcon />}
+                        icon={<MapsHomeWorkIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Typ pracy'
                         desc='Zdalna' />
                     <OfferParameter
-                        icon={<MyLocationIcon />}
+                        icon={<MyLocationIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Miejsce pracy'
                         desc='Polska' />
                     <OfferParameter
-                        icon={<ArticleIcon />}
+                        icon={<ArticleIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Typ umowy'
                         desc='O pracę' />
                     <OfferParameter
-                        icon={<TapAndPlayIcon />}
+                        icon={<TapAndPlayIcon sx={{ color: 'var(--iconColor)' }} />}
                         title='Typ rekrutacji'
                         desc='Zdalna' />
                 </div>
@@ -54,7 +46,7 @@ const Offer = () => {
                     <div className="element"> Node.js </div>
                     <div className="element"> React.js </div>
                     <div className="element"> CSS </div>
-                    <div className="element"> Linux </div>
+                    <div className="element"> GNU/Linux </div>
                 </div>
                 <div className="expected"> Mile widziane </div>
                 <div className="techs">
@@ -69,11 +61,10 @@ const Offer = () => {
             <div className="info element">
                 <div className="banner">
                     <CodeIcon sx={{ fontSize: '5rem' }} />
-                    <span>O projekcie</span>
+                    <span>O firmie</span>
                 </div>
                 <div className="text">
-                    <p>
-                        Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz naszych potrzeb. Na naszej stronie możesz zobaczyć zrealizowane
+                <p>Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz potrzeb naszych. Na naszej stronie możesz zobaczyć zrealizowane
                         przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
                 </div>
             </div>
@@ -81,23 +72,23 @@ const Offer = () => {
                 <div className="title">Nasze wymagania</div>
                 <div className="required">
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='6 miesięcy doświadczenia w implementacji i wdrażaniu rozwiązań webowych w oparciu o React.js'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='znajomość języka TypeScript, pozwalająca sprawnie odczytywać program w nim napisany'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='zaawansowana umięjętność korzystania z CSS'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
-                        requirement='podstawowa umięjętność obsługi systemów Linux z poziomu terminalu'
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
+                        requirement='podstawowa umięjętność obsługi systemów GNU/Linux z poziomu terminalu'
                     />
                     <OfferRequirement
-                        icon={<ErrorOutlineIcon sx={{ color: '#481fa2' }} />}
+                        icon={<ErrorOutlineIcon sx={{ color: '#913fe2' }} />}
                         requirement='podstawowa umięjętność posługiwania się SQL'
                     />
                 </div>
@@ -116,6 +107,21 @@ const Offer = () => {
                         requirement='doświadczenie przy pracy z PostgreSQL i/lub AWS'
                     />
                 </div>
+                </div>
+                <div className="benefits">
+                    <div className="title">Benefity</div>
+                    <div className="element">
+                        <HealingIcon sx={{ color: '#913fe2' }} />
+                        prywatna opieka medyczna
+                    </div>
+                    <div className="element">
+                        <MoreTimeIcon sx={{ color: '#913fe2' }} />
+                        elastyczny czas pracy
+                    </div>
+                    <div className="element">
+                        <SchoolIcon sx={{ color: '#913fe2' }} />
+                        dofinansowanie do kursów i szkoleń
+                    </div>
             </div>
         </div>
     );
