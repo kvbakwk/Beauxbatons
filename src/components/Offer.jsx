@@ -110,6 +110,21 @@ const Offer = () => {
                     />
                 </div>
             </div>
+            <div className="duties element">
+                <div className="title">Twój zakres obowiązków</div>
+                <div className="duty">
+                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
+                    Praca przy tworzeniu oprogramowania, z grupą programistów, w systemie Scrum.
+                </div>
+                <div className="duty">
+                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
+                    Utrzymywanie i rozwój istniejącego kodu oraz wdrażanie zupełnie nowych rozwiązań.
+                </div>
+                <div className="duty">
+                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
+                    Tworzenie dokumentacji do nowo utworzonego kodu, praca z kodem stworzonym już wcześniej.
+                </div>
+            </div>
             <div className="benefits element">
                 <div className="title">Benefity</div>
                 <div className="tiles">
@@ -125,20 +140,6 @@ const Offer = () => {
                         <SchoolIcon sx={{ color: '#913fe2' }} />
                         dofinansowanie do kursów i szkoleń
                     </div>
-            </div>
-            <div className="duties element">
-                <div className="title">Twój zakres obowiązków</div>
-                <div className="dutie">
-                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
-                    Praca przy tworzeniu oprogramowania, z grupą programistów, w systemie Scrum.
-                </div>
-                <div className="dutie">
-                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
-                    Utrzymywanie i rozwój istniejącego kodu oraz wdrażanie zupełnie nowych rozwiązań.
-                </div>
-                <div className="dutie">
-                    <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
-                    Tworzenie dokumentacji do nowo utworzonego kodu, praca z kodem stworzonym już wcześniej.
                 </div>
             </div>
         </div>
