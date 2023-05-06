@@ -39,6 +39,7 @@ body.dark {
 }
 
 .switch {
+  z-index: 200;
   position: fixed;
   top: 10px;
   right: 10px;

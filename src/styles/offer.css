@@ -1,4 +1,5 @@
 .offer {
+    z-index: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
