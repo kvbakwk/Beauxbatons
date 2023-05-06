@@ -107,9 +107,10 @@ const Offer = () => {
                         requirement='doświadczenie przy pracy z PostgreSQL i/lub AWS'
                     />
                 </div>
-                </div>
-                <div className="benefits">
-                    <div className="title">Benefity</div>
+            </div>
+            <div className="benefits element">
+                <div className="title">Benefity</div>
+                <div className="tiles">
                     <div className="element">
                         <HealingIcon sx={{ color: '#913fe2' }} />
                         prywatna opieka medyczna
@@ -122,6 +123,7 @@ const Offer = () => {
                         <SchoolIcon sx={{ color: '#913fe2' }} />
                         dofinansowanie do kursów i szkoleń
                     </div>
+                </div>
             </div>
         </div>
     );
