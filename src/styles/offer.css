@@ -37,6 +37,7 @@
     height: 100%;
     padding-left: 30px;
 
+    border-bottom: 1px solid var(--backgroundColorLight);
     border-bottom: 1px solid var(--shadow);
 }
 
@@ -69,6 +70,7 @@
     width: 60px;
     height: 60px;
 
+    background-color: var(--backgroundColorLight);
     background-color: var(--backgroundLight);
     border-radius: 10px;
 }
@@ -248,6 +250,58 @@
 
 
 
+.offer .benefits {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: auto;
+
+    padding: 50px 30px;
+}
+
+.offer .benefits .title {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.offer .benefits .tiles {
+    display: grid;
+    grid-template: 200px / repeat(3, 200px);
+    gap: 10px;
+
+    margin: 0 5px 0 5px;
+}
+
+.offer .benefits .tiles .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+
+    background: var(--backgroundColorLight);
+    border-radius: 14px;
+}
+
+.offer .benefits .tiles .element svg {
+    font-size: 3rem;
+}
+
+
+
+
 
 .offer .duties {
     display: flex;
@@ -258,6 +312,7 @@
 
     width: 100%;
     height: auto;
+
     padding: 50px 30px;
 }
 
@@ -272,7 +327,7 @@
     margin-bottom: 30px;
 }
 
-.offer .duties .dutie {
+.offer .duties .duty {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -281,6 +336,6 @@
     padding: 10px 20px;
 }
 
-.offer .duties .dutie svg {
+.offer .duties .duty svg {
     font-size: 1.8rem;
 }

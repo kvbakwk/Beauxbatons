@@ -1,13 +1,5 @@
 import '../styles/offer.css'
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import TimelapseIcon from '@mui/icons-material/Timelapse';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
-import MyLocationIcon from '@mui/icons-material/MyLocation';
-import ArticleIcon from '@mui/icons-material/Article';
-import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
-import CodeIcon from '@mui/icons-material/Code';
-import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import { LocationOnIcon, TimelapseIcon, MapsHomeWorkIcon, MyLocationIcon, ArticleIcon, TapAndPlayIcon, CodeIcon, ErrorOutlineIcon, CheckCircleOutlineIcon, HealingIcon, MoreTimeIcon, SchoolIcon, } from '../Icons.jsx'
 
 import OfferParameter from './OfferParameter';
 import OfferRequirement from './OfferRequirement.jsx';
@@ -74,7 +66,8 @@ const Offer = () => {
                 <div className="text">
                     <p>
                         Jesteśmy GoodieCodes. U nas możesz pracować nad różnymi projektami w zależności od Twoich potrzeb, doświadczenia oraz potrzeb naszych. Na naszej stronie możesz zobaczyć zrealizowane
-                        przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.</p>
+                        przez nas projekty. Rzeczy, nad którymi pracujemy to: aplikacje desktopowe, webowe i mobilne, programy, skrypty, pluginy czy boty.
+                    </p>
                 </div>
             </div>
             <div className="requirements element">
@@ -119,17 +112,34 @@ const Offer = () => {
             </div>
             <div className="duties element">
                 <div className="title">Twój zakres obowiązków</div>
-                <div className="dutie">
+                <div className="duty">
                     <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
                     Praca przy tworzeniu oprogramowania, z grupą programistów, w systemie Scrum.
                 </div>
-                <div className="dutie">
+                <div className="duty">
                     <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
                     Utrzymywanie i rozwój istniejącego kodu oraz wdrażanie zupełnie nowych rozwiązań.
                 </div>
-                <div className="dutie">
+                <div className="duty">
                     <ErrorOutlineIcon sx={{ color: '#913fe2' }} />
                     Tworzenie dokumentacji do nowo utworzonego kodu, praca z kodem stworzonym już wcześniej.
+                </div>
+            </div>
+            <div className="benefits element">
+                <div className="title">Benefity</div>
+                <div className="tiles">
+                    <div className="element">
+                        <HealingIcon sx={{ color: '#913fe2' }} />
+                        prywatna opieka medyczna
+                    </div>
+                    <div className="element">
+                        <MoreTimeIcon sx={{ color: '#913fe2' }} />
+                        elastyczny czas pracy
+                    </div>
+                    <div className="element">
+                        <SchoolIcon sx={{ color: '#913fe2' }} />
+                        dofinansowanie do kursów i szkoleń
+                    </div>
                 </div>
             </div>
         </div>
