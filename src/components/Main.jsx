@@ -5,7 +5,7 @@ import Offer from "./Offer";
 
 import '../styles/main.css'
 
-const Main = () => {
+const Main = ({ setForm }) => {
 
     const [shareOpen, setShareOpen] = useState(false)
 
@@ -19,7 +19,12 @@ const Main = () => {
             <Offer />
             <div className="application">
                 <div className="app-button">
-                    <Button variant="contained" color="secondary" disableElevation>Aplikuj</Button>
+                    <Button
+                        variant="contained"
+                        onClick={() => setForm(true)}
+                        disableElevation
+                    >
+                        Aplikuj</Button>
                 </div>
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
