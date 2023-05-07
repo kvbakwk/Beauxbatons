@@ -5,6 +5,12 @@ import { General, Technologies, Information, Requirements, Duties, Benefits } fr
 import '../styles/main.css'
 
 const Main = ({ setForm, copy, setCopy }) => {
+
+    const handleClick = () => {
+        navigator.clipboard.writeText('https://goodiecodes.com/')
+        copy ? setCopy(false) : setCopy(true)
+    }
+
     return (
         <div className="main">
             <div className="offer">
@@ -27,7 +33,7 @@ const Main = ({ setForm, copy, setCopy }) => {
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>Drukuj</Button>
-                        <Button onClick={() => copy ? setCopy(false) : setCopy(true)}> Udostępnij </Button>
+                        <Button onClick={handleClick}> Udostępnij </Button>
                     </ButtonGroup>
                 </div>
             </div>
