@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
-import ApplicationForm from "./components/ApplicationForm";
+import Form from "./components/Form";
+import Copy from "./components/Copy";
 
 function App() {
 
   const [form, setForm] = useState(false)
+  const [copy, setCopy] = useState(false)
   const [dark, setDark] = useState(false)
 
   useEffect(() => {
@@ -18,8 +20,9 @@ function App() {
   return (
     <>
       <Header />
-      <Main setForm={setForm} />
-      <ApplicationForm show={form} setShow={setForm} />
+      <Main setForm={setForm} copy={copy} setCopy={setCopy} />
+      <Form show={form} setShow={setForm} />
+      <Copy show={copy} setShow={setCopy} />
       <div className="switch" onClick={() => { setDark(!dark) }}></div>
     </>
   );

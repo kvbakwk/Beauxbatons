@@ -10,6 +10,22 @@
     margin: 50px auto 100px auto;
 }
 
+.main .offer {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .offer>.element {
+    background-color: var(--background);
+    box-shadow: 0 0 10px var(--shadow);
+    border-radius: 10px;
+}
+
 .main .application {
     position: sticky;
     top: 100px;

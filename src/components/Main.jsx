@@ -1,22 +1,20 @@
-import { useState } from "react";
-import { Button, ButtonGroup, Popover } from "@mui/material";
+import { Button, ButtonGroup } from "@mui/material";
 
-import Offer from "./Offer";
+import { General, Technologies, Information, Requirements, Duties, Benefits } from './offer/Offer'
 
 import '../styles/main.css'
 
-const Main = ({ setForm }) => {
-
-    const [shareOpen, setShareOpen] = useState(false)
-
-    const handleClick = e => {
-        navigator.clipboard.writeText('(??? or kvba.pl/)')
-        setShareOpen(true)
-    }
-
+const Main = ({ setForm, copy, setCopy }) => {
     return (
         <div className="main">
-            <Offer />
+            <div className="offer">
+                <General />
+                <Technologies />
+                <Information />
+                <Requirements />
+                <Duties />
+                <Benefits />
+            </div>
             <div className="application">
                 <div className="app-button">
                     <Button
@@ -29,21 +27,10 @@ const Main = ({ setForm }) => {
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>Drukuj</Button>
-                        <Button onClick={handleClick}> Udostępnij </Button>
+                        <Button onClick={() => copy ? setCopy(false) : setCopy(true)}> Udostępnij </Button>
                     </ButtonGroup>
                 </div>
             </div>
-            <Popover
-                open={shareOpen}
-                onClose={() => setShareOpen(false)}
-                anchorReference="anchorPosition"
-                anchorPosition={{ top: 20, left: 910 }}
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-                transformOrigin={{ vertical: 'top', horizontal: 'center' }}
-                sx={{ '& div:nth-child(3)': { backgroundColor: 'transparent' } }}
-            >
-                <div style={{ padding: '15px 20px', backgroundColor: '#481fa2', color: '#fff', borderRadius: '5px' }}>Skopiowano link do schowka</div>
-            </Popover >
         </div>
     );
 };
