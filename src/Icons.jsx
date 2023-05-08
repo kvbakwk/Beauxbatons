@@ -1,15 +1,15 @@
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import TimelapseIcon from '@mui/icons-material/Timelapse';
-import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
-import MyLocationIcon from '@mui/icons-material/MyLocation';
-import ArticleIcon from '@mui/icons-material/Article';
-import TapAndPlayIcon from '@mui/icons-material/TapAndPlay';
-import CodeIcon from '@mui/icons-material/Code';
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import TimelapseIcon from '@mui/icons-material/Timelapse'
+import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork'
+import MyLocationIcon from '@mui/icons-material/MyLocation'
+import ArticleIcon from '@mui/icons-material/Article'
+import TapAndPlayIcon from '@mui/icons-material/TapAndPlay'
+import CodeIcon from '@mui/icons-material/Code'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import HealingIcon from '@mui/icons-material/Healing';
-import MoreTimeIcon from '@mui/icons-material/MoreTime';
-import SchoolIcon from '@mui/icons-material/School';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
+import HealingIcon from '@mui/icons-material/Healing'
+import MoreTimeIcon from '@mui/icons-material/MoreTime'
+import SchoolIcon from '@mui/icons-material/School'
 
 export {
 	LocationOnIcon,
@@ -24,4 +24,4 @@ export {
 	HealingIcon,
 	MoreTimeIcon,
 	SchoolIcon,
-};
+}

@@ -237,14 +237,14 @@
 
     100% {
         z-index: 100;
-        background-color: #0008;
+        background-color: #0006;
     }
 }
 
 @keyframes hideOverlay {
     0% {
         z-index: 100;
-        background-color: #0008;
+        background-color: #0006;
     }
 
     99% {
@@ -280,20 +280,30 @@
 
 @keyframes sendForm {
     0% {
+        opacity: 1;
         height: 740px;
         transform: translateY(0);
         filter: blur(0px);
     }
 
     60% {
+        opacity: 1;
         height: 30%;
         transform: translateY(0);
         filter: blur(1px);
     }
 
-    100% {
+    99% {
+        opacity: 1;
         height: 30%;
-        transform: translateX(200%);
+        transform: translateY(300%);
+        filter: blur(1px);
+    }
+
+    100% {
+        opacity: 0;
+        height: 30%;
+        transform: translateY(300%);
         filter: blur(1px);
     }
 }
