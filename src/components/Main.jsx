@@ -5,11 +5,20 @@ import { General, Technologies, Information, Requirements, Duties, Benefits } fr
 
 import '../styles/main.css'
 
-const Main = ({ setForm, copy, setCopy, setContact }) => {
+const Main = ({ setForm, copy, setCopy, contact, setContact }) => {
 
-    const handleClick = () => {
-        navigator.clipboard.writeText('https://goodiecodes.com/')
-        copy ? setCopy(false) : setCopy(true)
+    const handleClick = variant => {
+        switch (variant) {
+            case 'copy':
+                navigator.clipboard.writeText('https://goodiecodes.com/')
+                copy ? setCopy(false) : setCopy(true)
+                break
+            case 'contact':
+                contact ? setContact(false) : setContact(true)
+                break
+            default:
+                break
+        }
     }
 
     return (
@@ -35,7 +44,7 @@ const Main = ({ setForm, copy, setCopy, setContact }) => {
                     <Button
                         id="contact"
                         variant="text"
-                        onClick={() => setContact(true)}
+                        onClick={() => handleClick('contact')}
                         disableElevation
                     >
                         <CallIcon />
@@ -44,7 +53,7 @@ const Main = ({ setForm, copy, setCopy, setContact }) => {
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>Drukuj</Button>
-                        <Button onClick={handleClick}> Udostępnij </Button>
+                        <Button onClick={() => handleClick('copy')}> Udostępnij </Button>
                     </ButtonGroup>
                 </div>
             </div>

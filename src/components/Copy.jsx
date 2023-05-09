@@ -4,12 +4,10 @@ import '../styles/copy.css'
 const Copy = ({ show, setShow }) => {
 
     useEffect(() => {
-        if (show)
-            setTimeout(() => {
-                if (show)
-                    setShow(false)
-            }, 6000)
-    }, [show, setShow])
+        setTimeout(() => {
+            document.querySelector('.copy').style.opacity = 1
+        }, 400)
+    }, [])
 
     return (
         <div
