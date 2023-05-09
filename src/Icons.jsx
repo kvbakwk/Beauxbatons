@@ -11,6 +11,7 @@ import HealingIcon from '@mui/icons-material/Healing'
 import MoreTimeIcon from '@mui/icons-material/MoreTime'
 import SchoolIcon from '@mui/icons-material/School'
 import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
 
 export {
 	LocationOnIcon,
@@ -25,5 +26,6 @@ export {
 	HealingIcon,
 	MoreTimeIcon,
 	SchoolIcon,
-	CallIcon
+	CallIcon,
+	EmailIcon
 }

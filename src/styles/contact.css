@@ -1,19 +1,23 @@
-.copy {
+.contact {
     opacity: 0;
     z-index: 1000;
     position: fixed;
-    top: 25px;
-    left: calc(50vw - 130px);
+    bottom: 25px;
+    right: 25px;
 
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 5px;
 
     color: #fff;
 
-    width: 260px;
-    height: 50px;
+    width: 300px;
+    height: 120px;
     margin: 0 auto;
+    padding: 0 20px;
 
     background-color: var(--primary);
     border-radius: 5px;
@@ -26,9 +30,16 @@
     animation-iteration-count: 1;
 }
 
-@keyframes show {
+.contact .element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+@keyframes showContact {
     from {
-        transform: translateY(-140%);
+        transform: translateY(115%);
     }
 
     to {
@@ -36,12 +47,12 @@
     }
 }
 
-@keyframes hide {
+@keyframes hideContact {
     from {
         transform: translateY(0);
     }
 
     to {
-        transform: translateY(-140%);
+        transform: translateY(115%);
     }
 }

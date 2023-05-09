@@ -9,6 +9,11 @@ export default function ApplicationForm({ show, setShow }) {
     const [send, setSend] = useState(false)
 
     useEffect(() => {
+        setTimeout(() => {
+            document.querySelectorAll('.overlay')[0].style.opacity = 1
+        }, 400)
+    }, [])
+    useEffect(() => {
         if (send) {
             document.querySelectorAll('input').forEach(input => input.value = null)
             document.querySelector('textarea').value = null
