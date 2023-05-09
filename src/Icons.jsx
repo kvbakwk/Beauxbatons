@@ -10,6 +10,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import HealingIcon from '@mui/icons-material/Healing'
 import MoreTimeIcon from '@mui/icons-material/MoreTime'
 import SchoolIcon from '@mui/icons-material/School'
+import CallIcon from '@mui/icons-material/Call';
 
 export {
 	LocationOnIcon,
@@ -24,4 +25,5 @@ export {
 	HealingIcon,
 	MoreTimeIcon,
 	SchoolIcon,
+	CallIcon
 }
