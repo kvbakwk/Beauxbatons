@@ -12,6 +12,7 @@ import MoreTimeIcon from '@mui/icons-material/MoreTime'
 import SchoolIcon from '@mui/icons-material/School'
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 
 export {
 	LocationOnIcon,
@@ -27,5 +28,6 @@ export {
 	MoreTimeIcon,
 	SchoolIcon,
 	CallIcon,
-	EmailIcon
+	EmailIcon,
+	AssignmentIcon
 }

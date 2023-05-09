@@ -1,0 +1,44 @@
+.stages {
+    display: flex;
+
+    width: 100%;
+    height: 250px;
+}
+
+.stages .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    width: 200px;
+    height: calc(100% - 80px);
+    margin: 40px 0;
+
+    border-right: 1px solid var(--text);
+}
+
+.stages .label svg {
+    font-size: 4rem;
+}
+
+.stages .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: .7rem;
+    text-align: center;
+
+    width: calc((100% - 200px)/3);
+}
+
+.stages .step svg {
+    font-size: 3rem;
+}
