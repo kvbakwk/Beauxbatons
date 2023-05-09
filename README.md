@@ -1,4 +1,4 @@
 # Beauxbatons
 
-by kubalfw, deni and falkosik
+by kubalfw, deni
 
