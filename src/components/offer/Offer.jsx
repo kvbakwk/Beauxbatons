@@ -4,6 +4,8 @@ import Information from './Information'
 import Requirements from './Requirements'
 import Duties from './Duties'
 import Benefits from './Benefits'
+import Organization from './Organization'
+import Stages from './Stages'
 
 export {
     General,
@@ -12,4 +14,6 @@ export {
     Requirements,
     Duties,
     Benefits,
+    Organization,
+    Stages
 }

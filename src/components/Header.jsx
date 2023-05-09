@@ -10,7 +10,7 @@ const Header = () => {
                         <span id='dynamic-txt'>Codes|</span>
                     </div>
                 </div>
-                <div className="quote">
+                <div className="quote print">
                     Witaj, interesuje Cię nasza firma? Pracuj dla nas!
                 </div>
             </main>

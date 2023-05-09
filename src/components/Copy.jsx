@@ -11,7 +11,7 @@ const Copy = ({ show, setShow }) => {
 
     return (
         <div
-            className="copy"
+            className="copy print"
             style={show ? { animationName: 'show' } : { animationName: 'hide' }}
             onClick={() => setShow(false)}
         >

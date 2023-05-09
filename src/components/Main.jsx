@@ -1,7 +1,7 @@
 import { Button, ButtonGroup } from "@mui/material";
 import { CallIcon } from "../Icons";
 
-import { General, Technologies, Information, Requirements, Duties, Benefits } from './offer/Offer'
+import { General, Technologies, Information, Requirements, Duties, Benefits, Organization, Stages } from './offer/Offer'
 
 import '../styles/main.css'
 
@@ -15,6 +15,15 @@ const Main = ({ setForm, copy, setCopy, contact, setContact }) => {
                 break
             case 'contact':
                 contact ? setContact(false) : setContact(true)
+                break
+            case 'print':
+                document.querySelectorAll('.print').forEach(element => {
+                    element.style.opacity = 0
+                })
+                window.print()
+                document.querySelectorAll('.print').forEach(element => {
+                    element.style.opacity = 1
+                })
                 break
             default:
                 break
@@ -30,6 +39,8 @@ const Main = ({ setForm, copy, setCopy, contact, setContact }) => {
                 <Requirements />
                 <Duties />
                 <Benefits />
+                <Organization />
+                <Stages />
             </div>
             <div className="application">
                 <div className="app-button">
@@ -52,7 +63,7 @@ const Main = ({ setForm, copy, setCopy, contact, setContact }) => {
                 </div>
                 <div className="options">
                     <ButtonGroup variant="text" aria-label="text button group">
-                        <Button>Drukuj</Button>
+                        <Button onClick={() => handleClick('print')}>Drukuj</Button>
                         <Button onClick={() => handleClick('copy')}> Udostępnij </Button>
                     </ButtonGroup>
                 </div>
