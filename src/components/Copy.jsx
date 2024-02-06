@@ -1,23 +1,21 @@
-import { useEffect } from 'react';
-import '../styles/copy.css'
+import { useEffect } from "react";
+import "../styles/copy.css";
 
 const Copy = ({ show, setShow }) => {
+  useEffect(() => {
+    setTimeout(() => {
+      document.querySelector(".copy").style.opacity = 1;
+    }, 400);
+  }, []);
 
-    useEffect(() => {
-        setTimeout(() => {
-            document.querySelector('.copy').style.opacity = 1
-        }, 400)
-    }, [])
-
-    return (
-        <div
-            className="copy print"
-            style={show ? { animationName: 'show' } : { animationName: 'hide' }}
-            onClick={() => setShow(false)}
-        >
-            Skopiowano link do schowka
-        </div>
-    );
-}
+  return (
+    <div
+      className="copy print"
+      style={show ? { animationName: "show" } : { animationName: "hide" }}
+      onClick={() => setShow(false)}>
+      Skopiowano link do schowka
+    </div>
+  );
+};
 
 export default Copy;

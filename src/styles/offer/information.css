@@ -1,32 +1,32 @@
 .information {
-    display: grid;
-    grid-template: 1fr / 40% 60%;
+  display: grid;
+  grid-template: 1fr / 40% 60%;
 
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 .information .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    color: var(--background);
-    font-size: 2.5rem;
-    font-weight: 600;
+  color: var(--background);
+  font-size: 2.5rem;
+  font-weight: 600;
 
-    background-color: var(--text);
-    border-radius: 10px;
+  background-color: var(--text);
+  border-radius: 10px;
 }
 
 .information .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 
-    text-align: center;
+  text-align: center;
 
-    margin: 0 20px;
+  margin: 0 20px;
 }

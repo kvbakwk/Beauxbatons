@@ -1,310 +1,296 @@
 .overlay {
-    opacity: 0;
-    z-index: -100;
-    position: fixed;
-    top: 0;
-    left: 0;
+  opacity: 0;
+  z-index: -100;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-    background-color: #0000;
+  background-color: #0000;
 
-    animation-fill-mode: forwards;
-    animation-duration: .4s;
-    animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
 }
 
 .overlay .container {
-    z-index: 200;
+  z-index: 200;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: 100%;
-    padding-bottom: 31px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 31px;
 
-    backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 
-    transform: translateY(-120%);
+  transform: translateY(-120%);
 
-    animation-fill-mode: forwards;
-    animation-duration: .4s;
-    animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
 }
 
 .overlay .container .form {
-    z-index: 100;
-    display: grid;
-    grid-template: 150px 1fr 150px / 1fr;
+  z-index: 100;
+  display: grid;
+  grid-template: 150px 1fr 150px / 1fr;
 
-    width: 560px;
-    height: 740px;
+  width: 560px;
+  height: 740px;
 
-    background-color: var(--backgroundLight);
-    box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
-        0px 16px 24px 2px rgba(0, 0, 0, 0.14),
-        0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-    border-radius: 10px;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
+  background-color: var(--backgroundLight);
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
 .overlay .container .form .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    color: var(--primary);
-    font-size: 2rem;
-    font-weight: 500;
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 500;
 
-    width: 100%;
-    height: 100%;
-    padding: 0 50px;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
 }
 
 .overlay .container .form .inputs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-    width: 100%;
-    height: 100%;
-    padding: 0 40px 30px;
+  width: 100%;
+  height: 100%;
+  padding: 0 40px 30px;
 }
-
 
 .overlay .container .form .inputs input[type="file"] {
-    color: transparent;
+  color: transparent;
 }
 
-.overlay .container .form .inputs input[type="file"]::-webkit-file-upload-button {
-    visibility: hidden;
+.overlay
+  .container
+  .form
+  .inputs
+  input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
 }
 
 .overlay .container .form .inputs input,
 .overlay .container .form .inputs textarea {
-    color: var(--text);
-    font-size: 1.4rem;
+  color: var(--text);
+  font-size: 1.4rem;
 
-    height: 30px;
-    padding-left: 10px;
+  height: 30px;
+  padding-left: 10px;
 }
 
 .overlay .container .form .inputs textarea {
-    font-size: 1.3rem;
-    margin: 5px 0;
+  font-size: 1.3rem;
+  margin: 5px 0;
 }
 
 .overlay .container .form .inputs div div::before {
-    border-width: 2px;
-    border-bottom-color: var(--secondary);
+  border-width: 2px;
+  border-bottom-color: var(--secondary);
 }
 
 .overlay .container .form .inputs div div::after {
-    border-width: 3px;
-    border-bottom-color: var(--primary);
+  border-width: 3px;
+  border-bottom-color: var(--primary);
 }
 
 .overlay .container .form .inputs div label {
-    color: var(--secondary);
-    font-size: 1.4rem;
+  color: var(--secondary);
+  font-size: 1.4rem;
 }
 
 .overlay .container .form .inputs div label.Mui-focused {
-    color: var(--primary);
+  color: var(--primary);
 }
 
-.overlay .container .form>.buttons {
-    display: grid;
-    grid-template: 2fr 1fr / 1fr;
-    gap: 10px;
+.overlay .container .form > .buttons {
+  display: grid;
+  grid-template: 2fr 1fr / 1fr;
+  gap: 10px;
 
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
 
 .overlay .container .form .buttons .checkboxes {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 
-    width: 100%;
-    height: 100%;
-    padding: 0 30px;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
 }
 
 .overlay .container .form .buttons .checkboxes span:first-child {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .overlay .container .form .buttons .checkboxes span:last-child {
-    color: var(--text);
-    font-size: .9rem;
-    user-select: none;
+  color: var(--text);
+  font-size: 0.9rem;
+  user-select: none;
 }
 
 .overlay .container .form .buttons .buttons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay .container .form .buttons .buttons button {
-    font-size: 1rem;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: none;
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  text-transform: none;
 
-    padding: 5px 18px;
+  padding: 5px 18px;
 }
 
 .overlay .container .form .buttons .buttons button:first-child {
-    color: var(--text);
+  color: var(--text);
 }
 
 .overlay .container .form .buttons .buttons button:first-child:hover {
-    background-color: #913fe211;
+  background-color: #913fe211;
 }
 
 .overlay .container .form .buttons .buttons button:last-child {
-    color: var(--backgroundLight);
-    background-color: var(--primary);
+  color: var(--backgroundLight);
+  background-color: var(--primary);
 }
 
 .overlay .container .form .buttons .buttons button:last-child:hover {
-    background-color: var(--primaryHover);
+  background-color: var(--primaryHover);
 }
 
-
-
 .overlay .container .success {
-    z-index: 50;
-    position: absolute;
+  z-index: 50;
+  position: absolute;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .overlay .container .success svg {
-    color: #55dd55;
-    font-size: 10rem;
+  color: #55dd55;
+  font-size: 10rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes showOverlay {
-    0% {
-        z-index: -100;
-        background-color: #0000;
-    }
+  0% {
+    z-index: -100;
+    background-color: #0000;
+  }
 
-    1% {
-        z-index: 100;
-        background-color: #0000;
-    }
+  1% {
+    z-index: 100;
+    background-color: #0000;
+  }
 
-    100% {
-        z-index: 100;
-        background-color: #0006;
-    }
+  100% {
+    z-index: 100;
+    background-color: #0006;
+  }
 }
 
 @keyframes hideOverlay {
-    0% {
-        z-index: 100;
-        background-color: #0006;
-    }
+  0% {
+    z-index: 100;
+    background-color: #0006;
+  }
 
-    99% {
-        z-index: 100;
-        background-color: #0000;
-    }
+  99% {
+    z-index: 100;
+    background-color: #0000;
+  }
 
-    100% {
-        z-index: -100;
-        background-color: #0000;
-    }
+  100% {
+    z-index: -100;
+    background-color: #0000;
+  }
 }
 
 @keyframes showForm {
-    0% {
-        transform: translateY(-120%);
-    }
+  0% {
+    transform: translateY(-120%);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes hideForm {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    100% {
-        transform: translateY(-120%);
-    }
+  100% {
+    transform: translateY(-120%);
+  }
 }
 
 @keyframes sendForm {
-    0% {
-        opacity: 1;
-        height: 740px;
-        transform: translateY(0);
-        filter: blur(0px);
-    }
+  0% {
+    opacity: 1;
+    height: 740px;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
 
-    60% {
-        opacity: 1;
-        height: 30%;
-        transform: translateY(0);
-        filter: blur(1px);
-    }
+  60% {
+    opacity: 1;
+    height: 30%;
+    transform: translateY(0);
+    filter: blur(1px);
+  }
 
-    99% {
-        opacity: 1;
-        height: 30%;
-        transform: translateY(300%);
-        filter: blur(1px);
-    }
+  99% {
+    opacity: 1;
+    height: 30%;
+    transform: translateY(300%);
+    filter: blur(1px);
+  }
 
-    100% {
-        opacity: 0;
-        height: 30%;
-        transform: translateY(300%);
-        filter: blur(1px);
-    }
+  100% {
+    opacity: 0;
+    height: 30%;
+    transform: translateY(300%);
+    filter: blur(1px);
+  }
 }

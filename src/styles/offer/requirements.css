@@ -1,54 +1,54 @@
 .requirements {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
 
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 .requirements .title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 
-    width: 100%;
-    height: 100px;
-    padding: 0 30px;
+  width: 100%;
+  height: 100px;
+  padding: 0 30px;
 }
 
 .requirements .required,
 .requirements .optional {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
 
-    width: 100%;
-    height: auto;
-    padding: 0 50px;
+  width: 100%;
+  height: auto;
+  padding: 0 50px;
 }
 
 .requirements .optional {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .requirements .required .requirement,
 .requirements .optional .requirement {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 
-    width: 100%;
+  width: 100%;
 }
 
 .requirements .required .requirement svg,
 .requirements .optional .requirement svg {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
